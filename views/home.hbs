@@ -103,5 +103,43 @@
 		<!-- Footer -->
 		{{>footer }}
 
+		
+		{{!-- <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+		<script>
+		window.botpressWebChat.init({
+      		"botName": "Manta IA",
+			"botConversationDescription": "Asistente virtual",
+			"composerPlaceholder": "Escribe tu consulta...",
+			"botId": "a882694b-fd78-4c25-913a-0eaa8acc8a34",
+			"hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+			"messagingUrl": "https://messaging.botpress.cloud",
+			"clientId": "a882694b-fd78-4c25-913a-0eaa8acc8a34",
+			"webhookId": "e9f4a1b1-bc26-40d4-89da-b153f6d5ac37",
+			"lazySocket": true,
+			"themeName": "prism",
+      		"stylesheet": "https://webchat-styler-css.botpress.app/prod/6c94f63e-f2e2-469d-ae09-29874ab62b4d/v79959/style.css",
+			"frontendVersion": "v1",
+			"useSessionStorage": true,
+			"enableConversationDeletion": true,
+		});
+		</script> --}}
+		
+		
+		<script type="text/javascript">
+		(function(d, t) {
+			var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+			v.onload = function() {
+				window.voiceflow.chat.load({
+				verify: { projectID: '67e61a49ec62418dff70e4ee' },
+				url: 'https://general-runtime.voiceflow.com',
+				versionID: 'production',
+				voice: {
+					url: "https://runtime-api.voiceflow.com"
+				}
+				});
+			}
+			v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+		})(document, 'script');
+		</script>
 	</body>
 </html>

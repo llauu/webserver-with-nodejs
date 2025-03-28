@@ -13,21 +13,21 @@ app.use(express.static('public'));
 app.get('/', (req, res) => {
     res.render('home.hbs', {
         nombre: 'Lautaro Monserrat',
-        titulo: 'Curso de node'
+        titulo: 'Road Trip'
     });
 });
 
 app.get('/generic', (req, res) => {
     res.render('generic', {
         nombre: 'Lautaro Monserrat',
-        titulo: 'Curso de node'
+        titulo: 'Road Trip'
     })
 });
 
 app.get('/elements', (req, res) => {
     res.render('elements', {
         nombre: 'Lautaro Monserrat',
-        titulo: 'Curso de node'
+        titulo: 'Road Trip'
     })
 });
 
@@ -36,5 +36,5 @@ app.get('*', (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log(`app listening on port ${port}`);
+    console.log(`app running at http://localhost:${port}/`);
 })
